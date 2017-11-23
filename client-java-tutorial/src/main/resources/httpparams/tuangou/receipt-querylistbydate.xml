@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<param>
+    <!-- 公共参数 -->
+    <field name="app_key" value="1000082" desc="开放平台分配给应用的appid"/>
+    <field name="timestamp" valuebuilder="com.dianping.dzopen.valuebuilder.TimestampValueBuilder" desc="开放平台分配给应用的appid"/>
+    <field name="session" value="11122333" desc="商户授权成功后，点评到综开放平台颁发给应用的授权信息" />
+    <field name="format" value="json" desc="响应格式，默认json"/>
+    <field name="v" value="1" desc="API协议版本，默认值：1，此后版本升级，会递增"/>
+    <field name="sign_method" value="MD5" desc="签名的摘要算法，默认值为：MD5。"/>
+    <field name="sign" nullable="true" desc="API输入参数签名结果"/>
+
+    <!-- 接口业务参数 -->
+    <field name="app_shop_id" value="shop_id123" desc="服务商的店铺id"/>
+    <field name="date" valuebuilder="com.dianping.dzopen.valuebuilder.DateValueBuilder" desc="日期（如2016-01-01)"/>
+    <field name="offset" value="0" desc="查询起始位置"/>
+    <field name="limit" value="10" desc="查询条数"/>
+</param>
