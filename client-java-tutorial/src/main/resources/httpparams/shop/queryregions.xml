@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<param>
+    <!-- 公共参数 -->
+    <field name="app_key" value="1000082" desc="开放平台分配给应用的appid"/>
+    <field name="timestamp" valuebuilder="com.dianping.dzopen.valuebuilder.TimestampValueBuilder" desc="开放平台分配给应用的appid"/>
+    <field name="session" value="11122333" desc="商户授权成功后，点评到综开放平台颁发给应用的授权信息" />
+    <field name="format" value="json" desc="响应格式，默认json"/>
+    <field name="v" value="1" desc="API协议版本，默认值：1，此后版本升级，会递增"/>
+    <field name="sign_method" value="MD5" desc="签名的摘要算法，默认值为：MD5。"/>
+    <field name="sign" nullable="true" desc="API输入参数签名结果"/>
+
+    <!-- 接口业务参数 -->
+    <field name="city_name" value="上海" desc="城市名称" />
+</param>
